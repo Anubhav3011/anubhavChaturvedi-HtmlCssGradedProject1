@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/form.css">
+	<title>Lab Test</title>
+</head>
+<body>
+	<form action="">
+		<article>
+			<div>
+				<p>
+					<h3>1. Your contact details</h3>
+				</p>
+				<p>
+					<input type="text" placeholder="Full Name" required>
+					<input type="number" placeholder="Patient Id (if exists)">
+				</p>
+				<p>
+					<input type="number" min="6000000000" max="9999999999" placeholder="Contact Number" required>
+					<input type="email" placeholder="Email Id" required>
+				</p>
+				<p>
+					<h3>2. Address</h3>
+				</p>
+				<p>
+					<input type="text" placeholder="H-No" required>
+					<input type="text" placeholder="Street" required>
+				</p>
+				<p>
+					<input type="text" placeholder="Area" required>
+				</p>
+				<p>
+					<p><b>District</b></p>
+					<select name="District" id="district" required>
+						<option value="">Choose</option>
+						<option value="North Delhi">North Delhi</option>
+						<option value="East Delhi">East Delhi</option>
+						<option value="West Delhi">West Delhi</option>
+						<option value="South Delhi">South Delhi</option>
+					</select>
+				</p>
+				<p>
+					<h3>3. Choose the Test Type</h3>
+				</p>
+				<p>Check atleast one box without fail</p>
+				<p>
+					<input type="checkbox" id="c01" name="option01" value="CBC">
+					<label for="c01">CBC</label>
+				</p>
+				<p>
+					<input type="checkbox" id="c02" name="option02" value="Complete Urine">
+					<label for="c02">Complete Urine</label>
+				</p>
+				<p>
+					<input type="checkbox" id="c03" name="option03" value="Lipid Profile">
+					<label for="c03">Lipid Profile</label>
+				</p>
+				<p>
+					<input type="checkbox" id="c04" name="option04" value="Thyroid Stimulating Hormone (TSH)">
+					<label for="c04">Thyroid Stimulating Hormone (TSH)</label>
+				</p>
+				<p>
+					<input type="checkbox" id="c05" name="option05" value="Glucose Test">
+					<label for="c05">Glucose Test</label>
+				</p>
+				<p>
+					<h3>4. Do you want a hard copy of the report also ?</h3>
+				</p>
+				<p>
+					<input type="radio" id="c06" name="option06" value="True" required>
+					<label for="c06">Yes</label>
+					<input type="radio" id="c07" name="option06" value="False">
+					<label for="c07">No</label>
+				</p>
+				<p>
+					<h3>5. Select Your Comfortable Date and Time</h3>
+				</p>
+				<p>
+					<input type="date" placeholder="Date" required>
+					<input type="time" placeholder="Time" required>
+				</p>
+			</div>
+		</article>
+		<p>
+			<input class="button" type="reset">
+			<input class="button" type="submit">
+		</p>
+	</form>
+</body>
+</html>
